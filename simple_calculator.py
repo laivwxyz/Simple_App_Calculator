@@ -27,7 +27,11 @@ def calculator():
             if choice == 1:
                 result = num1 + num2
                 print(f"{num1} + {num2} = {result}")
-                
+            # if the user choose subtraction,
+            elif choice == 2:
+                result = num1 - num2
+                print(f"{num1} - {num2} = {result}")
+            
 # Ask the user if they want to try again
 # If the user enters an invalid input, a ValueError is raised.           
 # If the user chooses division and enters a second number of zero, a ZeroDivisionError is raised.     
