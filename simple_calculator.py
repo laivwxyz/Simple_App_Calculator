@@ -31,6 +31,10 @@ def calculator():
             elif choice == 2:
                 result = num1 - num2
                 print(f"{num1} - {num2} = {result}")
+            # if the user choose multiplication,
+            elif choice == 3:
+                result = num1 * num2
+                print(f"{num1} * {num2} = {result}")
             
 # Ask the user if they want to try again
 # If the user enters an invalid input, a ValueError is raised.           
