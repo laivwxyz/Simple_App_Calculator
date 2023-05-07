@@ -3,7 +3,17 @@
 # Programming Exercise
 
 # CREATING SIMPLE APP CALCULATOR
-# Ask the user to choose a math operation    
+def calculator():
+    try:
+        while True:
+            # Ask the user to choose a math operation
+            print("Choose a math operation:")
+            print("1. Addition")
+            print("2. Subtraction")
+            print("3. Multiplication")
+            print("4. Division")
+            choice = int(input("Enter your choice (1-4): "))
+
 # Check if the choice is valid
 # Ask the user for two numbers
 # Perform the chosen operation and display the result
@@ -12,4 +22,4 @@
 # If the user chooses division and enters a second number of zero, a ZeroDivisionError is raised.     
 # If any other error occurs, an Exception is raised.
 
-
+calculator()
