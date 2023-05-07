@@ -48,7 +48,13 @@ def calculator():
                 print("Thank you!")
                 break
                           
-# If the user enters an invalid input, a ValueError is raised.           
+    # If the user enters an invalid input, a ValueError is raised.  
+    except ValueError as e:
+        # Log the error
+        print(f"Error: {e}")
+        print("Please enter a valid choice (1-4)")
+        calculator()
+      
 # If the user chooses division and enters a second number of zero, a ZeroDivisionError is raised.     
 # If any other error occurs, an Exception is raised.
 
