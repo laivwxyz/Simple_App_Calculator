@@ -54,8 +54,14 @@ def calculator():
         print(f"Error: {e}")
         print("Please enter a valid choice (1-4)")
         calculator()
-      
-# If the user chooses division and enters a second number of zero, a ZeroDivisionError is raised.     
+
+    # If the user chooses division and enters a second number of zero, a ZeroDivisionError is raised.      
+    except ZeroDivisionError as e:
+        # Log the error
+        print(f"Error: {e}")
+        print("Please enter a non-zero second number")
+        calculator()
+
 # If any other error occurs, an Exception is raised.
 
 calculator()
