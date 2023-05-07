@@ -17,8 +17,11 @@ def calculator():
             # Check if the choice is valid
             if choice not in [1, 2, 3, 4]:
                 raise ValueError("Invalid choice")
+
+            # Ask the user for two numbers
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
             
-# Ask the user for two numbers
 # Perform the chosen operation and display the result
 # Ask the user if they want to try again
 # If the user enters an invalid input, a ValueError is raised.           
