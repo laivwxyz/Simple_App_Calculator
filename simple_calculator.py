@@ -14,7 +14,10 @@ def calculator():
             print("4. Division")
             choice = int(input("Enter your choice (1-4): "))
 
-# Check if the choice is valid
+            # Check if the choice is valid
+            if choice not in [1, 2, 3, 4]:
+                raise ValueError("Invalid choice")
+            
 # Ask the user for two numbers
 # Perform the chosen operation and display the result
 # Ask the user if they want to try again
