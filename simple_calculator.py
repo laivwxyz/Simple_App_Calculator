@@ -42,8 +42,12 @@ def calculator():
                 result = num1 / num2
                 print(f"{num1} / {num2} = {result}")
 
-            
-# Ask the user if they want to try again
+            # Ask the user if they want to try again
+            try_again = input("Do you want to try again? (y/n): ")
+            if try_again.lower() != "y":
+                print("Thank you!")
+                break
+                          
 # If the user enters an invalid input, a ValueError is raised.           
 # If the user chooses division and enters a second number of zero, a ZeroDivisionError is raised.     
 # If any other error occurs, an Exception is raised.
