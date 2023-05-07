@@ -38,9 +38,10 @@ def calculator():
             # if the user choose division,
             elif choice == 4:
                 if num2 == 0:
-                    raise ZeroDivisionError("Cannot divide by zero")
+                    raise ZeroDivisionError("Cannot divide by zero.")
                 result = num1 / num2
                 print(f"{num1} / {num2} = {result}")
+
             
 # Ask the user if they want to try again
 # If the user enters an invalid input, a ValueError is raised.           
