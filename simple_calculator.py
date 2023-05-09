@@ -2,6 +2,18 @@
 # Assignment 5
 # Programming Exercise
 
+# Adding a design in the program 
+from termcolor import colored
+from pyfiglet import Figlet
+
+f = Figlet(font = 'isometric3', width = 240)
+print(colored(f.renderText('CALCULATOR'), 'cyan'))
+print(colored('=' * 140, 'cyan'))
+f = Figlet(font = 'serifcap',  width = 240)
+print(colored(f.renderText('   Choose one math operation'), 'red'))
+f = Figlet(font = 'serifcap', justify= "center")
+print(colored(f.renderText('              + - x /'),'red'))
+
 # CREATING SIMPLE APP CALCULATOR
 def calculator():
     try:
