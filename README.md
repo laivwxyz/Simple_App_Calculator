@@ -1,4 +1,4 @@
-# 📌📌📌 SIMPLE APP CALCULATOR 
+# ![Screenshot (293)](https://github.com/laivwxyz/Simple_App_Calculator/assets/129714181/e60bfb08-9a5e-436c-858c-82f1d0b055a3)
 
 This Python program is a simple calculator that performs four basic mathematical operations (addition, subtraction, multiplication, and division) on two numbers entered by the user. The program also includes exception handling to capture errors during runtime.
 
@@ -38,4 +38,22 @@ To run this script, you need to have Python installed on your system.
 
 ## Sample Input and Output
 
-When you run the script, it will prompt the user with the following:
+- When you run the script, it will prompt the user with the following:
+
+    ![Screenshot (295)](https://github.com/laivwxyz/Simple_App_Calculator/assets/129714181/8da1d665-1ce4-4c05-a1ac-d0045848c640)
+
+- Assume that the user enters 1 to perform addition and the following numbers:
+
+    ![Screenshot (296)](https://github.com/laivwxyz/Simple_App_Calculator/assets/129714181/fe384687-cded-4d6a-98c5-c482ab3246a0)
+
+- The program will output the following:
+
+    ![Screenshot (296) 1](https://github.com/laivwxyz/Simple_App_Calculator/assets/129714181/a2e5ead9-238a-41c7-956a-e3000b42539a)
+
+- If the user enters 'y', the program will repeat the above steps. If the user enters `n`, the program will output:
+
+    ![Screenshot (296) 2](https://github.com/laivwxyz/Simple_App_Calculator/assets/129714181/f115b6d6-329c-4462-96cc-96d582b02ff9)
+
+
+
+
