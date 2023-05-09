@@ -7,20 +7,20 @@ def calculator():
     try:
         while True:
             # Ask the user to choose a math operation
-            print("Choose a math operation:")
-            print("1. Addition")
-            print("2. Subtraction")
-            print("3. Multiplication")
-            print("4. Division")
-            choose = int(input("Enter your choice (1-4): "))
+            print("\033[96mChoose a math operation:")
+            print("\033[0m 1. Addition")
+            print("\033[0m 2. Subtraction")
+            print("\033[0m 3. Multiplication")
+            print("\033[0m 4. Division")
+            choose = int(input("\033[92mEnter your choice (1-4):\033[0m "))
 
             # Check if the choice is valid
             if choose not in [1, 2, 3, 4]:
                 raise ValueError("Invalid choice")
 
             # Ask the user for two numbers
-            num_1 = float(input("Enter first number: "))
-            num_2 = float(input("Enter second number: "))
+            num_1 = float(input("\033[92mEnter first number:\033[0m "))
+            num_2 = float(input("\033[92mEnter second number:\033[0m "))
 
             # Perform the chosen operation and display the result
             # if the user choose addition,
@@ -34,7 +34,7 @@ def calculator():
             # if the user choose multiplication,
             elif choose == 3:
                 result = num_1 * num_2
-                print(f"{num_1} * {num_2} = {result}")
+                print(f"m{num_1} * {num_2} = {result}")
             # if the user choose division,
             elif choose == 4:
                 if num_2 == 0:
@@ -43,28 +43,28 @@ def calculator():
                 print(f"{num_1} / {num_2} = {result}")
 
             # Ask the user if they want to try again
-            try_again = input("Do you want to try again? (y/n): ")
+            try_again = input("\033[92mDo you want to try again? (y/n):\033[0m ")
             if try_again.lower() != "y":
-                print("Thank you!")
+                print("\033[92mThank you!")
                 break
                           
     # If the user enters an invalid input, a ValueError is raised.  
     except ValueError as error:
         # Log the error
-        print(f"Error: {error}")
-        print("Please enter a valid choice (1-4)")
+        print(f"\033[91mError: \033[0m{error}")
+        print("\033[91mPlease enter a valid choice (1-4)")
         calculator()
         
     # If the user chooses division and enters a second number of zero, a ZeroDivisionError is raised.      
     except ZeroDivisionError as error:
         # Log the error
-        print(f"Error: {error}")
-        print("Please enter a non-zero second number")
+        print(f"\033[91mError: \033[0m{error}")
+        print("\033[91mPlease enter a non-zero second number")
         calculator()
 
     # If any other error occurs, an Exception is raised.    
     except Exception as error:
         # Log any other errors
-        print(f"Error: {error}")         
+        print(f"\033[91mError: \033[0m{error}")         
    
 calculator()
