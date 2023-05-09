@@ -54,6 +54,8 @@ To run this script, you need to have Python installed on your system.
 
     ![Screenshot (296) 2](https://github.com/laivwxyz/Simple_App_Calculator/assets/129714181/f115b6d6-329c-4462-96cc-96d582b02ff9)
 
+## Contibute
 
+Contributions are always welcome! Please read the [contribution guidelines](https://github.com/matiassingers/awesome-readme/blob/master/contributing.md) first.
 
 
