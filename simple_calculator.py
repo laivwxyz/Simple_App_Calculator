@@ -10,11 +10,11 @@ f = Figlet(font = 'isometric3', width = 240)
 print(colored(f.renderText('CALCULATOR'), 'cyan'))
 print(colored('=' * 140, 'cyan'))
 f = Figlet(font = 'serifcap',  width = 240)
-print(colored(f.renderText('   Choose one math operation'), 'red'))
+print(colored(f.renderText('   Choose one math operation'), 'light_green'))
 f = Figlet(font = 'serifcap', justify= "center")
-print(colored(f.renderText('              + - x /'),'red'))
+print(colored(f.renderText('              + - x /'),'light_green'))
 
-# CREATING SIMPLE APP CALCULATOR
+# ---
 def calculator():
     try:
         while True:
@@ -46,7 +46,7 @@ def calculator():
             # if the user choose multiplication,
             elif choose == 3:
                 result = num_1 * num_2
-                print(f"m{num_1} * {num_2} = {result}")
+                print(f"{num_1} * {num_2} = {result}")
             # if the user choose division,
             elif choose == 4:
                 if num_2 == 0:
@@ -57,7 +57,8 @@ def calculator():
             # Ask the user if they want to try again
             try_again = input("\033[92mDo you want to try again? (y/n):\033[0m ")
             if try_again.lower() != "y":
-                print("\033[92mThank you!")
+                print("\033[96mThank you!")
+                print(colored('=' * 140, 'cyan'))
                 break
                           
     # If the user enters an invalid input, a ValueError is raised.  
